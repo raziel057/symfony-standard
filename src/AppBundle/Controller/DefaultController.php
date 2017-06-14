@@ -6,8 +6,12 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
+use AppBundle\Model as AppModel;
+
 class DefaultController extends Controller
 {
+    use AppModel\Translation\Foo;
+
     /**
      * @Route("/", name="homepage")
      */
